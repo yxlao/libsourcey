@@ -271,12 +271,12 @@ if(WITH_WEBRTC)
   unset(LIB_EAY_RELEASE CACHE)
   unset(SSL_EAY_DEBUG CACHE)
   unset(SSL_EAY_RELEASE CACHE)
-  # find_path(OPENSSL_INCLUDE_DIR
-  #   NAMES openssl/ssl.h
-  #   PATHS
-  #     ${WEBRTC_ROOT_DIR}/third_party/boringssl/src/include
-  #     ${WEBRTC_ROOT_DIR}/include/third_party/boringssl/src/include
-  #   NO_DEFAULT_PATH)
+  find_path(OPENSSL_INCLUDE_DIR
+    NAMES openssl/ssl.h
+    PATHS
+      ${WEBRTC_ROOT_DIR}/third_party/boringssl/src/include
+      ${WEBRTC_ROOT_DIR}/include/third_party/boringssl/src/include
+    NO_DEFAULT_PATH)
   set(OPENSSL_INCLUDE_DIR "/home/yixing/repo/openssl/bin/include")
   list(APPEND LibSourcey_VENDOR_INCLUDE_DIRS ${OPENSSL_INCLUDE_DIR})
 endif()
