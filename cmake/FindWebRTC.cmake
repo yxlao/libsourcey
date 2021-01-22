@@ -41,6 +41,8 @@ find_path(WEBRTC_INCLUDE_DIR
     $ENV{HOME}/tmp/webrtcbuilds/out/src
     $ENV{HOME}/sourcey/webrtcbuilds/out/src
 )
+set(WEBRTC_ROOT_DIR "/home/yixing/tmp/webrtcbuilds/out/webrtc-33054-d2dd732-linux-x64")
+set(WEBRTC_INCLUDE_DIR "/home/yixing/tmp/webrtcbuilds/out/webrtc-33054-d2dd732-linux-x64/include")
 
 # ----------------------------------------------------------------------
 # Find WEBRTC libraries
